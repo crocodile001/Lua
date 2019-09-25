@@ -1,0 +1,77 @@
+-- 跳動
+--      local loop = 0
+--      --loop function 
+--      function breathe(obj)
+--        if (loop <= 1) then
+--          loop = loop + 1
+--          print (loop)
+--          local function loop(obj)
+--             
+--              --the obj is fire.png
+--              if (obj.scale ~= 1) then 
+--                obj.scale = 1
+--                breathe(obj)
+--              else
+--                obj.scale = obj.scaleValue
+--                breathe(obj)
+--              end
+--             
+--          end
+--          transition.scaleTo( obj, { xScale = obj.scale, yScale = obj.scale, time = 500, onComplete = loop, transition = easing.outBounce } )
+--        end
+--      end
+--      --create object for transition effect
+--      local obj = display.newImageRect(sceneGroup, 'images/許諾.png', 200, 300)
+--      obj.x = display.contentCenterX
+--      obj.y = display.contentCenterY
+--      --local obj1 = display.newImage('img.png', display.contentCenterX, display.contentCenterY)
+--      
+--      --set original scale
+--      obj.scale = 1
+--      --set will change scale
+--      obj.scaleValue = 1.1
+--      --go function
+--      breathe(obj)
+
+
+      -- 顯示已收集的物品
+--      if (Stone == 1) then
+--        local clue1 = display.newImageRect("images/stone.png", 30, 25)
+--        clue1.x=display.contentCenterX-235
+--        clue1.y=display.contentCenterY+30
+--        sceneGroup:insert(clue1)
+--      end
+
+
+--按鈕群組  
+
+      --local myText = display.newText( "等待", 0, 0, native.systemFont, 12 )
+      --myText.x = display.contentCenterX
+      --myText.y = display.contentCenterY-40
+      --sceneGroup:insert(myText)
+      
+--      local count=0
+--      for i=1,#txt do
+--        local x = display.newText(i,100,100,native.systemFont,40)
+--        x.x = display.contentCenterX
+--        x.y = display.contentCenterY
+--        sceneGroup:insert(x)
+--      end
+
+-- 存檔
+--gameSettingsFileName = "mygamesettings.json"
+--          currentSettingsVersion = 3
+--           
+--          myGameSettings = loadTable("mygamesettings.json")
+--          print (myGameSettings.level)
+--          if(myGameSettings == nil or myGameSettings.version == nil or myGameSettings.version ~= currentSettingsVersion) then
+--                  -- the default settings
+--           myGameSettings = {}
+--           myGameSettings.version = currentSettingsVersion
+--           myGameSettings.level = 2
+--           myGameSettings.speed = 5 
+--           saveTable(myGameSettings, gameSettingsFileName)
+--          end
+--           
+--          myGameSettings.level = myGameSettings.level+1
+--          saveTable(myGameSettings, gameSettingsFileName)
